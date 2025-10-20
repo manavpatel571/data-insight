@@ -13,7 +13,6 @@ A Streamlit-based chatbot that answers questions about Indian government dataset
 ## 🎯 Current Dataset
 
 The app currently works with **Commodity Price Index Data** from the Ministry of Commerce and Industry:
-- **869 records** covering 2011-2017
 - **Monthly price index data** for various commodities
 - **Resource ID**: `abfd2d50-0d73-4a3e-9027-10edb3d21940`
 
