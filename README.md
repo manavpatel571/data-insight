@@ -80,6 +80,32 @@ gov_data/
 └── .env                     # API keys (create this)
 ```
 
+## 🏛️ Architecture
+
+```mermaid
+graph TD
+    A[User Query] --> B[Streamlit App]
+    B --> C[Query Parser]
+    C --> D[Intent Detection]
+    D --> E[Data Fetcher]
+    E --> F[data.gov.in API]
+    F --> G[Raw Data]
+    G --> H[Data Analysis]
+    H --> I[Chart Generator]
+    I --> J[Plotly Visualization]
+    H --> K[Data Summary]
+    K --> L[Google Gemini AI]
+    L --> M[AI Response]
+    M --> N[Streamlit UI]
+    J --> N
+    N --> O[User Dashboard]
+    
+    style A fill:#e1f5fe
+    style F fill:#f3e5f5
+    style L fill:#e8f5e8
+    style O fill:#fff3e0
+```
+
 ## 🔧 How It Works
 
 1. **Query Processing**: The app analyzes your natural language query to determine intent
